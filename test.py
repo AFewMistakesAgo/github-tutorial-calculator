@@ -125,5 +125,11 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(self.calculator.cube(0), 0)
         self.assertEqual(self.calculator.cube(-1), -1)
 
+    def test_sin(self):
+        """Tests the sin function."""
+        self.assertTrue(math.isclose(self.calculator.sin(1), 0.8414709848))
+        self.assertEqual(self.calculator.sin(0), 0)
+        self.assertTrue(math.isclose(self.calculator.sin(-1), -0.8414709848))
+
 if __name__ == '__main__':
     unittest.main()

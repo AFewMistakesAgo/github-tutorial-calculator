@@ -53,3 +53,8 @@ class Calculator:
         """
     
         return (x * x * x)
+
+    def sin(self, x):
+        """ Returns the sin value of x.
+        """
+        return math.sin(x)
